@@ -39,7 +39,7 @@ export const Controls = track(() => {
         <img 
           src="/favicon.ico" 
           alt="Brinpage Logo" 
-          className="w-1/2 h-auto rounded-lg pt-5" 
+          className="w-1/2 h-auto pt-5" 
         />
       </Link>
 
@@ -69,9 +69,9 @@ export const Controls = track(() => {
       <div className="pointer-events-auto right-0 w-[102px] bg-white">
         <Button
           className="w-full h-10 rounded-none text-black bg-white m-2 hover:bg-white hover:text-black cursor-pointer shadow-none"
-          onClick={() => window.location.assign('https://brinpage.com')}
+          onClick={() => window.location.assign('https://docs.brinpage.com')}
         >
-           Docs
+           Learn
           <svg className="shrink-0 size-4 -ml-1 mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
         </Button>
       </div>

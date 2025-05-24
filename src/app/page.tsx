@@ -20,9 +20,10 @@ export default function Home() {
 
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-slate-900">
               Design workflows{" "}
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#ff7b00] to-red-500">
+              connecting nodes
+              {/* <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#ff7b00] to-red-500">
                 connecting nodes
-              </span>
+              </span> */}
             </h1>
 
             <p className="text-xl text-neutral-600 max-w-xl">
