@@ -1,13 +1,9 @@
 "use client"
 
 import { ArrowRight } from "lucide-react"
-
 import { Button } from "@/components/ui/button"
 import { Sparkles } from "lucide-react"
 import Link from "next/link"
-import { Tldraw, TldrawEditorProps } from "tldraw"
-import { InputShapeUtil } from "@/editor/lib/shapes/input/InputShapeUtil"
-import { ImageShapeUtil } from "@/editor/lib/shapes/image/ImageShapeUtil"
 import Image from "next/image"
 
 
@@ -68,37 +64,5 @@ export default function Home() {
         </div>
       </div>
     </main>
-  )
-}
-
-function TldrawCanvas() {
-
-  const defaultProps: TldrawEditorProps = {
-    initialState: "select",
-    shapeUtils: [InputShapeUtil, ImageShapeUtil],
-    cameraOptions: {
-      wheelBehavior: "none",
-      isLocked: true,
-    },
-    onMount: (editor) => {
-      editor.createShapes([
-        {
-          type: "input",
-          x: 50,
-          y: 50,
-        },
-        {
-          type: "image",
-          x: 400,
-          y: 250,
-        },
-      ])
-    }
-  }
-
-  return (
-    <div className="h-96 w-full relative rounded-lg border-2 border-slate-200 overflow-hidden">
-      <Tldraw hideUi {...defaultProps} />
-    </div>
   )
 }

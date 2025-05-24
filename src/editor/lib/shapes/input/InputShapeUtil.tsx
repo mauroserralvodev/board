@@ -63,10 +63,10 @@ export class InputShapeUtil extends ShapeUtil<TLInputShape> {
             const allArrowBindings = arrowShapes.flat()
 
             const startTerminals = filterTerminals(allArrowBindings, "start");
-            const endTerminals = filterTerminals(allArrowBindings, "end");
+            // const endTerminals = filterTerminals(allArrowBindings, "end");
 
             const startShapes = getShapeFromBindings(startTerminals);
-            const endShapes = getShapeFromBindings(endTerminals);
+            // const endShapes = getShapeFromBindings(endTerminals);
 
             // if (startShapes.length === 0 || endShapes.length === 0) return;
 
