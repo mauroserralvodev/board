@@ -20,7 +20,7 @@ export default function Page() {
         <div className="fixed inset-0 bg-neutral-500/40 z-[1000] flex items-center justify-center">
           <div className="bg-white/90 border border-black/15 p-12 rounded-lg max-w-lg mx-4">
             
-            <h3 className="text-3xl mb-3">We're in Beta</h3>
+            <h3 className="text-3xl mb-3">We&apos;re in Beta</h3>
             <p className="text-neutral-900 mb-4">
               Brinpage Board is currently in development. AI and file upload functions will be available soon.
             </p>
