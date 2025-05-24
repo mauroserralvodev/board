@@ -18,22 +18,23 @@ export default function Home() {
               <span>Canvas + AI Integration</span>
             </div>
 
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-slate-900">
-              Design workflows{" "}
-              connecting nodes
+            <h1 className="text-4xl md:text-7xl font-medium sm:font-bold tracking-tight text-slate-900">
+              Your ideas{" "} <br></br>
+              deserve space.
+              
               {/* <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#ff7b00] to-red-500">
                 connecting nodes
               </span> */}
             </h1>
 
             <p className="text-xl text-neutral-600 max-w-xl">
-              Define node behaviors and leverage generative AI for dynamic, real-time responses.
+              Sketch freely, add shapes, write notes, or brainstorm big ideas. No rules. Just flow.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-3 pt-4">
-              <Link href="https://tldraw.dev/quick-start" target="_blank">
+            <div className="flex flex-row gap-3 pt-4">
+              <Link href="/learn" target="_blank">
                 <Button size="lg" variant="outline" className="border-slate-300 cursor-pointer shadow-none">
-                  Docs
+                  Learn
                 </Button>
               </Link>
               <Link href="/canva">
