@@ -27,7 +27,7 @@ export default function Home() {
               </span> */}
             </h1>
 
-            <p className="text-mdsm:text-xl text-neutral-600 max-w-xl">
+            <p className="text-md sm:text-xl text-neutral-600 max-w-xl">
               Sketch freely, add shapes, write notes, or brainstorm big ideas. No rules. Just flow.
             </p>
 
