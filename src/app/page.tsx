@@ -9,16 +9,16 @@ import Image from "next/image"
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex items-center bg-gradient-to-b  from-slate-50 to slate-100">
+    <main className="min-h-screen flex items-center bg-gradient-to-b  from-slate-50 to slate-100 overflow-hidden">
       <div className="container flex-1 mx-auto px-4 py-20 md:py-32">
         <div className="flex flex-col md:flex-row items-center gap-12">
-          <div className="flex-1 space-y-6">
+          <div className="flex-1 space-y-6 px-5">
             <div className="inline-block  px-4 py-1.5 rounded-full bg-transparent border border-orange-600/50 text-sm text-[#ff7b00] transition">
               <Sparkles className="w-4 h-4 inline-block mr-2 text-[#ff7b00]"/>
               <span>Canvas + AI Integration</span>
             </div>
 
-            <h1 className="text-4xl md:text-7xl font-medium sm:font-bold tracking-tight text-slate-900">
+            <h1 className="text-4xl md:text-7xl font-medium sm:font-bold tracking-tight text-slate-900 ">
               Your ideas{" "} <br></br>
               deserve space.
               
@@ -27,7 +27,7 @@ export default function Home() {
               </span> */}
             </h1>
 
-            <p className="text-xl text-neutral-600 max-w-xl">
+            <p className="text-mdsm:text-xl text-neutral-600 max-w-xl">
               Sketch freely, add shapes, write notes, or brainstorm big ideas. No rules. Just flow.
             </p>
 

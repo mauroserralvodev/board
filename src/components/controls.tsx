@@ -35,7 +35,7 @@ export const Controls = track(() => {
   return (
     <div className="pointer-events-none absolute right-0 top-0 h-full flex flex-col items-end z-[999] backdrop-blur-xs">
       {/* Logo */}
-      <Link href="/" className="absolute right-0 top-0 w-[102px] p-2 pointer-events-auto z-[1000] flex justify-center items-center">
+      <Link href="https://brinpage.com/" className="absolute right-0 top-0 w-[102px] p-2 pointer-events-auto z-[1000] flex justify-center items-center">
         <img 
           src="/favicon.ico" 
           alt="Brinpage Logo" 
