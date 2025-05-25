@@ -1,6 +1,15 @@
 "use client"
 
-import { Eraser, Image, MessageSquare, Pencil, Square, ArrowRight, MousePointer, Type } from "lucide-react"
+import {
+  Eraser,
+  Image,
+  MessageSquare,
+  Pencil,
+  Square,
+  ArrowRight,
+  MousePointer,
+  Type,
+} from "lucide-react"
 import { track, useEditor } from "tldraw"
 import { Button } from "./ui/button"
 import { cn } from "@/lib/utils"
@@ -33,25 +42,29 @@ export const Controls = track(() => {
   }
 
   return (
-    <div className="pointer-events-none absolute right-0 top-0 h-full flex flex-col items-end z-[999] backdrop-blur-xs">
-      {/* Logo */}
-      <Link href="https://brinpage.com/" className="absolute right-0 top-0 w-[102px] p-2 pointer-events-auto z-[1000] flex justify-center items-center">
-        <img 
-          src="/favicon.ico" 
-          alt="Brinpage Logo" 
-          className="w-1/2 h-auto pt-5" 
+    <div className=" bg-white/90 pointer-events-none fixed z-[999] backdrop-blur-xs w-full bottom-0 h-[80px] flex flex-row justify-center items-center sm:flex-col sm:justify-between sm:items-end sm:right-0 sm:top-0 sm:h-full sm:w-[102px]">
+
+      {/* Logo arriba solo escritorio */}
+      <Link
+        href="https://brinpage.com/"
+        className="hidden sm:flex w-full p-2 pointer-events-auto z-[1000] justify-center items-center"
+      >
+        <img
+          src="/favicon.ico"
+          alt="Brinpage Logo"
+          className="w-1/2 h-auto pt-5"
         />
       </Link>
 
-      {/* Contenedor de herramientas existente */}
-      <div className="pointer-events-auto flex flex-col justify-center items-center flex-1 bg-white/90 w-[102px] p-2">
+      {/* Herramientas */}
+      <div className="pointer-events-auto flex flex-row sm:flex-col justify-center items-center w-full sm:w-full sm:flex-1 sm:py-4 sm:px-0 px-2">
         {tools.map((tool) => (
           <Button
             key={tool.name}
             variant={currentToolId === tool.name ? "default" : "ghost"}
             size="icon"
             className={cn(
-              "h-10 w-10 my-1 rounded-lg cursor-pointer",
+              "h-10 w-10 m-1 rounded-lg cursor-pointer",
               currentToolId === tool.name
                 ? "bg-gradient-to-r from-[#ff7b00] to-red-500 text-white hover:from-[#ff7b00] hover:to-[#ff7b00] transition-colors"
                 : "hover:bg-slate-100"
@@ -65,14 +78,27 @@ export const Controls = track(() => {
         ))}
       </div>
 
-      {/* Botón inferior */}
-      <div className="pointer-events-auto right-0 w-[102px] bg-white">
+      {/* Learn abajo solo escritorio */}
+      <div className="hidden sm:block pointer-events-auto w-full bg-white">
         <Button
           className="w-full h-10 rounded-none text-black bg-white m-2 hover:bg-white hover:text-black cursor-pointer shadow-none"
-          onClick={() => window.location.assign('/learn')}
+          onClick={() => window.location.assign("/learn")}
         >
-           Learn
-          <svg className="shrink-0 size-4 -ml-1 mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          Learn
+          <svg
+            className="shrink-0 size-4 -ml-1 mr-2"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="m9 18 6-6-6-6" />
+          </svg>
         </Button>
       </div>
     </div>
