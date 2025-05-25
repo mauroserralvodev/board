@@ -44,15 +44,15 @@ export const Controls = track(() => {
   return (
     <div className=" bg-white/90 pointer-events-none fixed z-[999] backdrop-blur-xs w-full bottom-0 h-[80px] flex flex-row justify-center items-center sm:flex-col sm:justify-between sm:items-end sm:right-0 sm:top-0 sm:h-full sm:w-[102px]">
 
-      {/* Logo arriba solo escritorio */}
+      {/* Logo arriba */}
       <Link
         href="https://brinpage.com/"
         className="hidden sm:flex w-full p-2 pointer-events-auto z-[1000] justify-center items-center"
       >
         <img
-          src="/favicon.ico"
+          src="/bplogov.png"
           alt="Brinpage Logo"
-          className="w-1/2 h-auto pt-5"
+          className="w-5/6 h-auto pt-5"
         />
       </Link>
 
@@ -78,7 +78,7 @@ export const Controls = track(() => {
         ))}
       </div>
 
-      {/* Learn abajo solo escritorio */}
+      {/* Boton inferior */}
       <div className="hidden sm:block pointer-events-auto w-full bg-white">
         <Button
           className="w-full h-10 rounded-none text-black bg-white m-2 hover:bg-white hover:text-black cursor-pointer shadow-none"
