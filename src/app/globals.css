@@ -3,9 +3,9 @@
 @import "tw-animate-css";
 
 :root {
-  --primary: white;
-  --secondary: black;
-  --tertiary: black;
+  --primary: black;
+  --secondary: white;
+  --tertiary: white;
 }
 ::selection {
   background-color: #FFEFD5;
