@@ -58,7 +58,7 @@ function Learn() {
       </div>
 
       <div className="pt-12">
-        <p className="text-lg text-neutral-600">Ready to try it yourself? Head to <a href="https://board.brinpage.com/learn" className="underline hover:text-black">Board</a> and start creating — no rules, just flow.</p>
+        <p className="text-lg text-neutral-600">Ready to try it yourself? Head to <a href="https://board.brinpage.com/canva" className="underline hover:text-black">Board</a> and start creating — no rules, just flow.</p>
       </div>
     </div>
   )
