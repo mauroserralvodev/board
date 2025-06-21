@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Wix_Madefor_Display } from "next/font/google";
+import { Inter } from "next/font/google";
 
-const font = Wix_Madefor_Display({ subsets: ["latin"], weight: "400" });
+const font = Inter({ subsets: ["latin"], weight: "300" });
 
 
 export const metadata: Metadata = {

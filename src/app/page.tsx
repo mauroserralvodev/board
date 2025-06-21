@@ -5,7 +5,9 @@
 import { Sparkles } from "lucide-react"
 // import Link from "next/link"
 import Image from "next/image"
+import { Instrument_Serif } from "next/font/google";
 
+const font = Instrument_Serif({ subsets: ["latin"], weight: "400" });
 
 export default function Home() {
   return (
@@ -18,17 +20,19 @@ export default function Home() {
               <span>Canvas + AI Integration</span>
             </div>
 
-            <h1 className="text-4xl md:text-7xl font-medium tracking-tight text-slate-900 ">
-              Your ideas{" "} <br></br>
-              deserve space.
-              
-              {/* <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#ff7b00] to-red-500">
-                connecting nodes
-              </span> */}
-            </h1>
+            <div className={font.className}>
+              <h1 className="text-4xl md:text-7xl font-medium tracking-tight text-slate-900 ">
+                Your ideas
+                deserve space.
+                
+                {/* <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#ff7b00] to-red-500">
+                  connecting nodes
+                </span> */}
+              </h1>
+            </div>
 
-            <p className="text-md sm:text-xl text-neutral-600 max-w-xl">
-              Sketch freely, add shapes, write notes, or brainstorm big ideas. No rules. Just flow.
+            <p className="text-md text-neutral-600 max-w-xl">
+              Board combines the freedom of a blank canvas with the power of AI. Sketch, write, generate, and organize — effortlessly. No rules. Just flow.
             </p>
 
             <div className="flex flex-row gap-3 pt-4">
