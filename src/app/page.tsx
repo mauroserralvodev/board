@@ -15,8 +15,8 @@ export default function Home() {
       <div className="container flex-1 mx-auto px-4 py-20 md:py-32">
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="flex-1 space-y-6 px-5">
-            <div className="inline-block  px-4 py-1.5 rounded-full bg-transparent border border-orange-600/50 text-sm text-[#ff7b00] transition">
-              <Sparkles className="w-4 h-4 inline-block mr-2 text-[#ff7b00]"/>
+            <div className="inline-block  px-4 py-1.5 rounded-full bg-neutral-100 border border-black/20 text-black/50 transition">
+              <Sparkles className="w-4 h-4 inline-block mr-2"/>
               <span>Canvas + AI Integration</span>
             </div>
 
