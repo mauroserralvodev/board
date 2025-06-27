@@ -1,8 +1,5 @@
 "use client"
 import Canvas from '@/components/canvas'
-import { Instrument_Serif } from "next/font/google";
-
-const font = Instrument_Serif({ subsets: ["latin"], weight: "400" });
 
 export default function Page() {
   // const [showBetaWarning, setShowBetaWarning] = useState(false)
