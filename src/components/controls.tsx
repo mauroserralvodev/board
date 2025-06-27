@@ -13,7 +13,6 @@ import {
 import { track, useEditor } from "tldraw"
 import { Button } from "./ui/button"
 import { cn } from "@/lib/utils"
-import Link from "next/link"
 
 type Tool = {
   name: string
