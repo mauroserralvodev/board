@@ -45,16 +45,16 @@ export const Controls = track(() => {
     <div className=" bg-white/90 pointer-events-none fixed z-[999] backdrop-blur-xs w-full bottom-0 h-[80px] flex flex-row justify-center items-center sm:flex-col sm:justify-between sm:items-end sm:right-0 sm:top-0 sm:h-full sm:w-[102px]">
 
       {/* Logo arriba */}
-      <Link
+      {/* <Link
         href="https://brinpage.com/"
         className="hidden sm:flex w-full p-2 pointer-events-auto z-[1000] justify-center items-center"
       >
         <img
-          src="/bplogov.png"
+          src="/board.png"
           alt="Brinpage Logo"
           className="w-5/6 h-auto pt-5"
         />
-      </Link>
+      </Link> */}
 
       {/* Herramientas */}
       <div className="pointer-events-auto flex flex-row sm:flex-col justify-center items-center w-full sm:w-full sm:flex-1 sm:py-4 sm:px-0 px-2">
@@ -64,9 +64,9 @@ export const Controls = track(() => {
             variant={currentToolId === tool.name ? "default" : "ghost"}
             size="icon"
             className={cn(
-              "h-10 w-10 m-1 rounded-lg cursor-pointer",
+              "h-10 w-10 m-1 rounded-none cursor-pointer",
               currentToolId === tool.name
-                ? "bg-gradient-to-r from-[#ff7b00] to-red-500 text-white hover:from-[#ff7b00] hover:to-[#ff7b00] transition-colors"
+                ? "bg-black transition-colors"
                 : "hover:bg-slate-100"
             )}
             onClick={() => handleTool(tool.name)}

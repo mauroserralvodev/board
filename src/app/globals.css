@@ -8,8 +8,8 @@
   --tertiary: white;
 }
 ::selection {
-  background-color: #FFEFD5;
-  color: #ff7b00; 
+  background-color: #0071e3;
+  color: white; 
 }
 *::-webkit-scrollbar { 
   width: 15px;

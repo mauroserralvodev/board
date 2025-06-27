@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { IBM_Plex_Mono } from "next/font/google";
 
-const font = Inter({ subsets: ["latin"], weight: "300" });
+const font = IBM_Plex_Mono({ subsets: ['latin'], weight: "500" });
 
 
 export const metadata: Metadata = {
-  title: "BrinPage Board — AI Solutions",
-  description: "BrinPage is pioneering AI-driven innovations, including Brinpage Board, a cutting-edge tool for developers, students and creatives.",
+  title: "[BOARD] - MS",
+  description: "Just a board.",
 };
 
 export default function RootLayout({
