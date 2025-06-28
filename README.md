@@ -2,7 +2,7 @@
 
 ![Board Screenshot](./public/board-preview.png)
 
-**Board** is an interactive visual canvas where each shape understands context, communicates with others, and uses AI to generate intelligent content in real time. Designed for developers and creators building visual agents, intelligent diagrams, or new ways to interact with large language models, Board combines the flexibility of tldraw with the power of AI to bring your ideas to life through connected nodes.
+**Board** is a visual canvas built with tldraw where users can draw and connect custom shapes. Connected shapes share context and use an AI model to generate responses based on the combined input. The project is structured to support contextual propagation between nodes, real-time AI generation, and a clean, responsive interface.
 
 ---
 
