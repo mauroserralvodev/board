@@ -1,34 +1,31 @@
 # Board
 
-![Board Screenshot](./public/board2.png)
+**Board** is an experimental visual canvas for building and exploring ideas through connected nodes.  
+Each node can represent text, shapes, or custom content. When nodes are linked, they share context, allowing the AI layer to process combined information and generate contextual responses.  
 
-**Board** is a visual canvas where users can draw and connect custom shapes. Connected shapes share context and use an AI model to generate responses based on the combined input. The project is structured to support contextual propagation between nodes, real-time AI generation, and a clean, responsive interface.
-
----
-
-## Technologies Used
-
-- Next.js 15 (App Router)
-- TypeScript
-- TailwindCSS
-- tldraw SDK
-- OpenAI API
-- Tiptap Editor
-- AI SDK
+The project focuses on:  
+- Context propagation between connected nodes.  
+- Real-time AI response generation.  
+- A minimal, responsive UI for visual thinking and diagramming.  
 
 ---
 
-## Installation
+## Features
 
-```bash
-git clone https://github.com/mauroserralvodev/board
-cd board
-pnpm install
-pnpm dev
-```
+- **Interactive Canvas** – Built on top of [tldraw](https://tldraw.dev) for drawing and connecting shapes.  
+- **Context-Aware AI** – Connected nodes share context to enrich AI responses.  
+- **Rich Text Support** – Uses Tiptap editor for inline editing and formatting.  
+- **Scalable Architecture** – Modular design with room for custom node types and additional integrations.  
+- **Modern Frontend Stack** – Fast, responsive, and optimized for developer iteration.  
 
 ---
 
-## Contact & Social
+## Tech Stack
 
-mauro@brinpage.com or [mauroserralvo.com](https://mauroserralvo.com)
+- [Next.js 15 (App Router)](https://nextjs.org/) – React framework  
+- [TypeScript](https://www.typescriptlang.org/) – Type safety  
+- [TailwindCSS](https://tailwindcss.com/) – Styling  
+- [tldraw SDK](https://tldraw.dev) – Visual canvas  
+- [Tiptap](https://tiptap.dev/) – Rich text editor  
+- [OpenAI API](https://platform.openai.com/) – AI generation  
+- [AI SDK](https://github.com/vercel/ai) – Streaming & LLM utilities  
